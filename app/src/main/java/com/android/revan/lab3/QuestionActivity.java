@@ -15,7 +15,7 @@ public class QuestionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_next);
         Bundle arguments = getIntent().getExtras();
         TextView textView = (TextView) findViewById(R.id.textView);
-        textView.setText(arguments.get("myText").toString());
+        textView.setText("Здравствуйте " + arguments.get("myText").toString() + " Вы хотите продолжать использовать приложение?");
         Button acceptButton = (Button) findViewById(R.id.yes);
         Button declinedButton = (Button) findViewById(R.id.no);
 
